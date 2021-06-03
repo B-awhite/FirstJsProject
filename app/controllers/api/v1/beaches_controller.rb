@@ -5,7 +5,7 @@ class Api::V1::BeachesController < ApplicationController
   def index
     @beaches = Beach.all
   
-    render json: @beaches
+    render json: @beaches, except: [:created_at, :updated_at]
   end
   
 #    # GET /beaches/1
