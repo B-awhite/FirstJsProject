@@ -9,9 +9,9 @@ class Api::V1::BeachesController < ApplicationController
   end
   
 #    # GET /beaches/1
-#   def show
-#     render json: @beach
-#   end
+  def show
+    render json: @beach, except: [:created_at, :updated_at], include: :comments
+  end
   
 #    # POST /beaches
   def create
