@@ -14,15 +14,15 @@ class Api::V1::BeachesController < ApplicationController
 #   end
   
 #    # POST /beaches
-#   def create
-#     @beach = Beach.new(beach_params)
+  def create
+    @beach = Beach.new(beach_params)
   
-#     if @beach.save
-#       render json: @beach, status: :created, location: @beach
-#     else
-#       render json: @beach.errors, status: :unprocessable_entity
-#     end
-#   end
+    if @beach.save
+      render json: @beach, status: :created, location: @beach
+    else
+      render json: @beach.errors, status: :unprocessable_entity
+    end
+  end
   
 #    # PATCH/PUT /beaches/1
 #   def update
