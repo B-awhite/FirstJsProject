@@ -18,9 +18,15 @@ class Api::V1::BeachesController < ApplicationController
     @beach = Beach.new(beach_params)
   
     if @beach.save
-      render json: @beach, status: :created, location: @beach
+      render json: {
+        status: 201,
+        beach: @beach
+      }, status: :created, location: api_v1_beach_path(@beach)
     else
-      render json: @beach.errors, status: :unprocessable_entity
+      render json: {
+        status: 422,
+        errors: @beach.errors.full_messages.join(", ")
+      }, status: :unprocessable_entity
     end
   end
   
@@ -34,9 +40,13 @@ class Api::V1::BeachesController < ApplicationController
 #   end
   
 #    # DELETE /beaches/1
-#   def destroy
-#     @beach.destroy
-#   end
+  def destroy
+   if @beach.destroy
+    render json: {message: "Beach deleted", beach: @beach}
+   else
+    render json: {message: "Couldn't delete" }
+   end 
+  end
   
    private
    # Use callbacks to share common setup or constraints between actions.
