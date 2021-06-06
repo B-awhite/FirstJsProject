@@ -31,13 +31,13 @@ class Api::V1::BeachesController < ApplicationController
   end
   
 #    # PATCH/PUT /beaches/1
-#   def update
-#     if @beach.update(beach_params)
-#       render json: @beach
-#     else
-#       render json: @beach.errors, status: :unprocessable_entity
-#     end
-#   end
+  def update
+    if @beach.update(beach_params)
+      render json: @beach
+    else
+      render json: @beach.errors, status: :unprocessable_entity
+    end
+  end
   
 #    # DELETE /beaches/1
   def destroy
