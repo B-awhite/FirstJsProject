@@ -33,9 +33,15 @@ class Api::V1::BeachesController < ApplicationController
 #    # PATCH/PUT /beaches/1
   def update
     if @beach.update(beach_params)
-      render json: @beach
+      render json: {
+        status: 200,
+        beach: @beach
+      }
     else
-      render json: @beach.errors, status: :unprocessable_entity
+      render json: {
+        status: 400,
+        errors: @beach.errors.full_messages.join(", ")
+      }, status: :unprocessable_entity
     end
   end
   

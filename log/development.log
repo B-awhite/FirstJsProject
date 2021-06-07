@@ -3940,3 +3940,397 @@ Processing by Api::V1::BeachesController#index as */*
 Completed 200 OK in 122ms (Views: 111.3ms | ActiveRecord: 25.5ms | Allocations: 11284)
 
 
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 16:31:50 -0400
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 16:31:50 -0400
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::BeachesController#index as */*
+Processing by Api::V1::BeachesController#index as */*
+  [1m[36mBeach Load (0.8ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mBeach Load (24.2ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 646ms (Views: 383.9ms | ActiveRecord: 10.2ms | Allocations: 21571)
+
+
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 533ms (Views: 385.6ms | ActiveRecord: 30.9ms | Allocations: 22270)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 16:39:11 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mBeach Load (1.1ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 89ms (Views: 88.5ms | ActiveRecord: 8.2ms | Allocations: 6635)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 16:41:29 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[36mBeach Load (0.8ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (6.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 79ms (Views: 66.7ms | ActiveRecord: 11.6ms | Allocations: 6043)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 16:45:05 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[36mBeach Load (0.7ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (2.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (7.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 97ms (Views: 81.9ms | ActiveRecord: 14.6ms | Allocations: 6044)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 16:48:39 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[36mBeach Load (0.8ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (8.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (16.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 140ms (Views: 110.7ms | ActiveRecord: 28.2ms | Allocations: 6024)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 16:50:51 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[36mBeach Load (0.8ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (2.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 72ms (Views: 63.7ms | ActiveRecord: 8.0ms | Allocations: 6023)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 16:53:14 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[36mBeach Load (1.3ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (2.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 83ms (Views: 72.5ms | ActiveRecord: 8.9ms | Allocations: 6023)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 16:53:39 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[36mBeach Load (1.4ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (6.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (21.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (5.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (2.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 85ms (Views: 44.7ms | ActiveRecord: 39.3ms | Allocations: 6023)
+
+
+Started POST "/api/v1/beaches" for ::1 at 2021-06-06 16:54:29 -0400
+Processing by Api::V1::BeachesController#create as JSON
+  Parameters: {"name"=>"Pcb", "country"=>"Pcb", "beach"=>{"name"=>"Pcb", "country"=>"Pcb"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:20:in `create'
+  [1m[36mBeach Create (83.0ms)[0m  [1m[32mINSERT INTO "beaches" ("name", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pcb"], ["country", "Pcb"], ["created_at", "2021-06-06 20:54:29.410681"], ["updated_at", "2021-06-06 20:54:29.410681"]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (458.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:20:in `create'
+Completed 201 Created in 652ms (Views: 1.0ms | ActiveRecord: 542.0ms | Allocations: 6811)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 16:54:30 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[36mBeach Load (1.0ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 13]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 61ms (Views: 53.4ms | ActiveRecord: 6.9ms | Allocations: 6799)
+
+
+Started PATCH "/api/v1/beaches/13" for ::1 at 2021-06-06 16:55:05 -0400
+Processing by Api::V1::BeachesController#update as JSON
+  Parameters: {"name"=>"Pcb", "country"=>"Pcb", "id"=>"13", "beach"=>{"name"=>"Pcb", "country"=>"Pcb"}}
+  [1m[36mBeach Load (0.8ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches" WHERE "beaches"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:54:in `set_beach'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.8ms | Allocations: 927)
+
+
+Started PATCH "/api/v1/beaches/13" for ::1 at 2021-06-06 16:55:14 -0400
+Processing by Api::V1::BeachesController#update as JSON
+  Parameters: {"name"=>"Pcb", "country"=>"Pcb", "id"=>"13", "beach"=>{"name"=>"Pcb", "country"=>"Pcb"}}
+  [1m[36mBeach Load (0.7ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches" WHERE "beaches"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:54:in `set_beach'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 776)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 16:56:14 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[36mBeach Load (0.7ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 13]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 100ms (Views: 91.8ms | ActiveRecord: 7.5ms | Allocations: 6802)
+
+
+Started DELETE "/api/v1/beaches/13" for ::1 at 2021-06-06 16:56:16 -0400
+Processing by Api::V1::BeachesController#destroy as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mBeach Load (2.1ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches" WHERE "beaches"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:54:in `set_beach'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:44:in `destroy'
+  [1m[36mBeach Destroy (54.8ms)[0m  [1m[31mDELETE FROM "beaches" WHERE "beaches"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:44:in `destroy'
+  [1m[36mTRANSACTION (40.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:44:in `destroy'
+Completed 200 OK in 108ms (Views: 0.7ms | ActiveRecord: 97.6ms | Allocations: 4466)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 16:56:22 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[36mBeach Load (2.3ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 86ms (Views: 77.6ms | ActiveRecord: 8.0ms | Allocations: 6023)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 16:56:22 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[36mBeach Load (0.6ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (6.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (2.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 83ms (Views: 68.6ms | ActiveRecord: 13.3ms | Allocations: 6023)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 17:15:02 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mBeach Load (0.8ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (2.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 10.7ms | Allocations: 6614)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 17:54:50 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mBeach Load (1.7ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (209.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 260ms (Views: 258.9ms | ActiveRecord: 217.8ms | Allocations: 6616)
+
+
+Started GET "/api/v1/beaches" for ::1 at 2021-06-06 18:20:44 -0400
+Processing by Api::V1::BeachesController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mBeach Load (1.5ms)[0m  [1m[34mSELECT "beaches".* FROM "beaches"[0m
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 1]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 2]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 3]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 4]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 5]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 6]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."beach_id" = ?[0m  [["beach_id", 7]]
+  ↳ app/controllers/api/v1/beaches_controller.rb:8:in `index'
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 9.9ms | Allocations: 6614)
+
+
