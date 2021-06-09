@@ -1,24 +1,14 @@
-# README
+# BestBeaches
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the backend to the Bestbeaches app, it contains the rails api used to create the database that houses some of the world most beautiful beaches.
 
-Things you may want to cover:
+## Installation 
 
-* Ruby version
+run rails s
+open localhost:3000 in the browser
+open with fronend index.html to see full app 
 
-* System dependencies
+## License
 
-* Configuration
+The gem is available as open source under the terms of the [MIT](https://choosealicense.com/licenses/mit/)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
