@@ -19,3 +19,31 @@ num_five = Beach.create(name: "Tunnels Beach", country: "USA")
 num_six = Beach.create(name: "Durdle Door", country: "England")
 
 num_seven = Beach.create(name: "Tulum", country: "Mexico")
+
+num_one.comments.build(
+    content: "So beautiful"
+)
+
+num_two.comments.build(
+    content: "Wish I could go"
+)
+
+num_three.comments.build(
+    content: "Take me with you"
+)
+
+num_three.comments.build(
+    content: "Of course lol"
+)
+
+num_four.comments.build(
+    content: "Best beach ever!!!"
+)
+
+num_one.save 
+num_two.save 
+num_three.save 
+num_four.save 
+
+
+
